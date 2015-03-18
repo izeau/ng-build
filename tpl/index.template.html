@@ -1,5 +1,13 @@
 <!doctype html>
+<!--[if IE 8]>
+<html class="old-ie ie8" ng-app="<%= main %>" ng-strict-di>
+<![endif]-->
+<!--[if IE 9]>
+<html class="old-ie ie9" ng-app="<%= main %>" ng-strict-di>
+<![endif]-->
+<!--[if !IE]>-->
 <html ng-app="<%= main %>" ng-strict-di>
+<!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +15,8 @@
         <base href="/">
 <% styles.forEach(function(href) {
 %>        <link rel="stylesheet" href="/<%= href %>">
-<% }) %>    </head>
-    <body>
-        <div ui-view></div>
-<% scripts.forEach(function(src) {
+<% }) %><% scripts.forEach(function(src) {
 %>        <script src="/<%= src %>"></script>
-<% }) %>    </body>
+<% }) %>    </head>
+    <body ui-view></body>
 </html>
