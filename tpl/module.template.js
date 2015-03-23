@@ -1,4 +1,4 @@
-(function() {
+(function module() {
 'use strict';
 
 // <%= name %> (<%= dirname %>)
@@ -8,7 +8,7 @@ angular
 .module(<%= $.json(name) %>, <%= $.json(requires) %>)
 <% if (templates.length) {
 %>
-.run(function($templateCache) {
+.run(function cacheTemplates($templateCache) {
 <%     templates.forEach(function(template) {
 %>    $templateCache.put(<%= $.json(template.name) %>, <%= $.json($.trim(template.contents)) %>);
 <%     })
