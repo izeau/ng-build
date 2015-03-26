@@ -12,11 +12,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base href="/">
-<% styles.forEach(function(href) {
-%>        <link rel="stylesheet" href="/<%= href %>">
+<% if (base) {
+%>        <base href="<%= base %>">
+<% } %><% styles.forEach(function(href) {
+%>        <link rel="stylesheet" href="<%= href %>">
 <% }) %><% scripts.forEach(function(src) {
-%>        <script src="/<%= src %>"></script>
+%>        <script src="<%= src %>"></script>
 <% }) %>    </head>
     <body ui-view></body>
 </html>
