@@ -1,6 +1,6 @@
 {
   "name": "ng-build",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "main": "lib/index.js",
   "dependencies": {
     "acorn": "^0.12.0",
