@@ -7,7 +7,7 @@
     "camel-case": "^1.1.1",
     "gulp": "^3.8.11",
     "jshint": "^2.6.3",
-    "lodash.template": "^3.3.0",
+    "lodash.template": "3.6.0",
     "node-sass": "^2.0.1",
     "rcfinder": "^0.1.8",
     "through2": "^0.6.3",
